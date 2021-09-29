@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
