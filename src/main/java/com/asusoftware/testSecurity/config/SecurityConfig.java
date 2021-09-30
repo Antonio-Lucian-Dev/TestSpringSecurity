@@ -19,6 +19,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final UserDetailsService userDetailsService;
     private final PasswordEncoder passwordEncoder;
 
+    // Questo metodo ci permette di aggiungere la security sugli endpoint
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -33,6 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic();
     }
 
+    // Questo methodo specifica il modo in cui avvera l'autenticazione
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
